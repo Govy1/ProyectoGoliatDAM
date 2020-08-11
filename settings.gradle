@@ -1,0 +1,2 @@
+rootProject.name='ProyectoGoliat'
+include ':app'

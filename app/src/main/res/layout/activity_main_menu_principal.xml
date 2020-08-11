@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imgfondo"
+    android:elevation="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="15dp"
+            android:paddingBottom="15dp"
+            android:text="Categorias"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="28dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnabarrotes"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/botton_principal"
+                android:text="Abarrotes" />
+
+            <Button
+                android:id="@+id/btngolosinas"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/botton_principal"
+                android:text="Golosinas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnbebidas"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/botton_principal"
+                android:text="Bebidas" />
+
+            <Button
+                android:id="@+id/btnalcohol"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/botton_principal"
+                android:shadowRadius="@android:integer/config_longAnimTime"
+                android:text="B. Alcoholicas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnlimpieza"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/botton_principal"
+                android:text="Productos de Limpieza" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="15dp"
+            android:text="Productos Frecuentes "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="28dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recicler"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>
